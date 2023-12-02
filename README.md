@@ -1,2 +1,2 @@
 # Advent-of-Code-2023
-Solutions to the Advent of Code 2023. I'll probably use Python for the leaderboard but will try out Golang later as well.
+Solutions to the Advent of Code 2023. I'll be using Python for the leaderboard but write the solutions in Golang later.
