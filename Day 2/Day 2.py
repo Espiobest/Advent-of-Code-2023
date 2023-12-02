@@ -1,8 +1,5 @@
-import re
-
 with open('data.txt', 'r') as r:
-    lines = r.read().strip().split("\n\n")
-
+    lines = r.read().splitlines()
 
 totalRed = 12
 totalGreen = 13
@@ -16,7 +13,7 @@ def parseColor(game, color):
         return -1
     return int(game.split(" " + color)[0].split()[-1])
 
-for i, line in enumerate(lines[0].split("\n"), start=1):
+for i, line in enumerate(lines, start=1):
     
     games = line.split("; ")
     red = blue = green = -1
