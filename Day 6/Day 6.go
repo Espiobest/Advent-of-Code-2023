@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"os"
 	"strconv"
 	"strings"
 )
@@ -17,7 +17,7 @@ func stringToIntSlice(slice []string) []int {
 }
 
 func main() {
-	data, err := ioutil.ReadFile("data.txt")
+	data, err := os.ReadFile("data.txt")
 
 	if err != nil {
 		fmt.Println("File reading error", err)
