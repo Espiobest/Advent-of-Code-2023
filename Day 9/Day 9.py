@@ -8,7 +8,7 @@ for line in lines:
     history = []
 
     while any(values):
-        arr = [j - i for i,j in zip(values, values[1:])]
+        arr = [j - i for i, j in zip(values, values[1:])]
         history.append(values)
         values = arr
     history.append(arr)

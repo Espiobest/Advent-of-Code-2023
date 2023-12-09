@@ -10,7 +10,6 @@ for line in lines[2:]:
     origin, path = line.split(" = ")
     mapping[origin] = [item.strip() for item in path[1:-1].split(',')]
 
-
 steps = 0
 dest = "AAA"
 while dest != "ZZZ":
@@ -21,7 +20,6 @@ while dest != "ZZZ":
         dest = mapping[dest][0]
     else:
         dest = mapping[dest][1]
-
 
 print("Part 1:", steps)
 
